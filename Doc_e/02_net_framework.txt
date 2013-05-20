@@ -1,0 +1,28 @@
+MSILとCLR
+　VSで作成されたアプリケーションは、開発言語に関係なく、MSIL(Microsoft Intermediate Language)という中間言語に翻訳されます。MSILはCIL(Common Intermediate Language)とも呼ばれ、.net framework上で実行可能なコードに翻訳された状態をコンパイルされた状態とします。今後、VB.netでコンパイルという言葉が出てきた場合、原則としてこのMSIに翻訳した状態のことを指します。
+　また、MSILを.net framework上で動作させるために必要なランタイムを共通言語ランタイム(CLR Common Language Runtime)と呼びます。本サイトでは、基本的にこのCLR上で動くアプリケーションの開発をレクチャしていきます。
+
+.net framework
+　.net frameworkは、近年のWindowsアプリケーションの動作環境（プラットフォーム）であり、クラスライブラリの集合体でもある。Windows OSとしてはWindows 98/NT 4.0まで、インストールが可能であるとするが、そのほかのOS上でも動作するとしている。現在、.net framework 4.5までリリースされており、基本的に新たなWindows OSがリリースされるのにあわせて更新される。
+対応表は以下の通り。
+
+ここに、図を挿入。
+.NET Framework バージョン 提供されているService Pack（SP）レベル 
+.NET Framework 1.0 RTM、SP1、SP2、SP3 
+.NET Framework 1.1 RTM、SP1 
+.NET Framework 2.0 RTM、SP1、SP2 
+.NET Framework 3.0 RTM、SP1、SP2 
+.NET Framework 3.5 RTM、SP1 
+.NET Framework 4 RTM 
+.NET Framework 4.5 RTM 
+
+.net frameworkは複数のバージョンを一つのOSで共存できる。
+そのため、たとえばWindowsXPに1.0、2.0、3.5などのように複数インストールされている場合があるがあるが、アプリケーション開発の状況によっては、端末がこのような状態になっていてもおかしくはありません。
+　上の表をさんこうに、欠落しているバージョンがないかよく確認しましょう。
+
+.net framework SDK
+
+ .net frameworkの中間言語であるMSILに変換するためのコンパイラは、.net framework SDKという。
+本サイトでは、基本的に、VSを使用するが、簡単なプログラム修正などで、VSを起動する手間がおしいときは、SDKをコマンドプロンプト上から実行し、コンパイルが可能である。
+下記に、公開されている。（なお、VSインストールによって、SDKはインストールされます。）
+

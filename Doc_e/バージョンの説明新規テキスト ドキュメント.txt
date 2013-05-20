@@ -1,0 +1,103 @@
+Visual Studioは、バージョンアップされるたびに、新たな機能が追加されます。
+よって、新しいバージョンで作ったプログラムのほうが、高度な機能や、便利な機能（使いやすい機能）が望めます。
+しかし、機能追加されていても、それを使うかは、プログラマー次第です。
+
+Visual Studio.NET(2002)以降では、その機能は、.NET Frameworkに依存しています。
+
+.NET Framework 1.0 の機能 ---> Visual Studio .NET (2002)で開発
+
+.NET Framework 1.1 の機能 ---> Visual Studio .NET 2003 で開発
+
+.NET Framework 2.0 の機能 ---> Visual Studio .NET 2005 、又は2008 で開発
+
+.NET Framework 3.0 の機能 ---> Visual Studio .NET 2008 で開発
+
+.NET Framework 3.5 の機能 ---> Visual Studio .NET 2008 で開発
+
+
+なお、時代の流れから言うと、
+
+.NET Framework 2.0 の機能 ---> Visual Studio .NET 2005 で開発
+
+.NET Framework 3.0 の機能 ---> Visual Studio .NET 2008 で開発
+
+.NET Framework 3.5 の機能 ---> Visual Studio .NET 2008 で開発
+
+となりそうな感じですが、VS2008は、プログラム作成時に2.0、3.0、3.5の中から選択可能になっていますので、最初に述べたほうの組み合わせが正しいです。
+
+
+
+[6.0から2002への変更時]
+
+
+VS6.0からVS.NET(2002)へのバージョンアップ時は、Windows自体を含めた根本的なテクノロジーが変更されました。
+VS6.0以前は、COM/DCOMと呼ばれる技術が中心で、VS.NET(2002)以降は、.NETと呼ばれる技術に変わりました。
+
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1421302489
+
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1418660834
+
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1321201488
+
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1321012363
+
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1120877046
+
+
+2002版では、.NETでの開発に適した新言語として、C♯が登場しました。
+
+
+
+[2003から2005への変更時]
+
+
+6.0--->2002変更時の大変貌ほどではありませんが、「VS.NET2002とVS.NET2003」に対し、VS.NET2005以降も大幅に変更されています。
+これは、.NETテクノロジーによる最初の開発環境である「VS.NET2002とVS.NET2003」に対して、問題点やプログラマー達の不満を改善したのが、VS.NET2005だからです。
+具体的には、C++からC♯へ移行するプログラマーが思っていたより少なかったので、C++も.NET開発に適した言語に改良されました。
+それがC++/CLIで、2005版から搭載されました。
+なお、.NETでは、共通言語ランタイムという仕様により、言語違いがあっても、コンパイル後のプログラムは共通になる仕様になっています。
+よって、前述のC++での変更は、VBとVC♯にも影響されますので、VC++、VB、VC♯の全体で変更が行われています。
+
+
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1219991912
+
+
+
+[具体的機能]
+
+具体的な機能の違いは、以下参照。
+
+http://ja.wikipedia.org/wiki/.NET_Framework
+
+http://ja.wikipedia.org/wiki/Visual_Studio#Visual_Studio_.NET_.2820...
+
+
+
+回答量の制限があるため、多くを紹介するのは無理ですので、幾つかだけ紹介します。
+
+
+.NET Framework 3.0から搭載されたWPFでは、Webで3Dを可能にしました。
+すなわち、今までのDirectXによる3Dやオーディオ機能を、Webにも適応させた技術です。
+
+
+.NET Framework 3.5から搭載されたLINQ（Language Integrated Query）では、クエリの記述方法が統一されました。
+「XMLへのクエリ」、「SQLへのクエリ」、「オブジェクトへのクエリ」が共通になったので、プログラミングがかなり楽になりました。
+
+
+.NETは、一般ユーザーには、まだ、ぴんと来ない技術ですが、完全な64ビットマシン時代が来れば、良く分かるようになります。
+.NETは、簡単に言えば、名前の通り、プログラムを部品化する仕様を、ネット仕様で標準化したものです。
+よって、昨年の夏にマイクロソフトは、Yahoo!の買収に失敗しましたが、もしも成功していれば、「情報」の検索では無く、「機能」の検索が可能になっていました。
+これは、技術的には、UDDIとWebサービスという技術で、.NET登場当初(2002版)から可能なのですが、一般普及がまだの状態です。
+
+
+次期OS（仮称Windows7）と次期コンパイラーVS2010では、完全な64ﾋﾞｯﾄ時代が来るように狙っていますので、もしかすると.NETの恩恵が一般的に知られるようになるのかも知れません。
+先のことですので、実際はどうなるか分かりませんが。
+
+
+
+製品名 バージョン 内部バージョン リリース 備考 
+Visual Basic .NET 2002 7.0 2002年 言語仕様の大幅変更（完全なオブジェクト指向）。実行環境に .NET Framework 1.0 を採用。 
+Visual Basic .NET 2003 2003 7.1 2003年 .NET Framework 1.1 に対応。 
+Visual Basic 2005 2005 8.0 2005年 .NET Framework 2.0 に対応。 
+Visual Basic 2008 2008 9.0 2007年 LINQやラムダ式の導入など言語機能を強化。.NET Framework 3.5 に対応。 
+Visual Basic 2010 2010 10.0 2010年 2010年5月現在での最新版（5月現在ではExpressEditionのみ）.NET Framework 4.0 に対 

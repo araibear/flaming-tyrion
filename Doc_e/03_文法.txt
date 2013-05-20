@@ -1,0 +1,125 @@
+文法
+http://adonetvb.com/Learning/
+
+文字列操作 
+文字列の表示 
+Dim 変数宣言 
+= 代入演算子 
+& 文字列連結演算子 
+文字列連結の例 
+文字列の改行 
+
+算術演算子 
+＋ 加算演算子 
+－ 減算演算子 
+＊ 乗算演算子 
+／ 除算演算子 
+￥ 整数除算演算子 
+Mod 剰余演算子 
+^ べき乗（累乗） 
+
+複合代入演算子 
++=　-=　*=　/= 
+￥=　^=　&= 
+
+分岐制御文 
+If Then EndIf 
+If Then Else EndIf 
+If Then ElseIf 
+Select Case 
+
+繰り返し制御文 For 
+For Next 
+For Next Step 
+For Next 2重 
+For Each Next 
+Exit For強制終了 
+
+繰り返し制御文Do 
+Do While Loop 
+Do Until Loop 
+Do Loop While 
+Do Loop Until 
+Exit Do強制終了 
+
+配列宣言と初期化 
+1次元配列の宣言  
+1次元配列初期化 
+2次元配列の宣言 
+2次元配列初期化 
+
+関数プロシージャ  
+関数入門 
+Public Function 
+関数サンプル 
+Public Sub 
+Exit Sub 
+
+Consoleからの入力 
+文字列の入力 
+整数の入力 
+実数の入力 
+エラー時再入力 
+数値変換 TryParse 
+
+数値書式 
+標準数値書式 
+カスタム数値書式 
+
+その他 
+Option Strict On 
+コメントの書き方 
+行継続文字 _ 
+Const 定数の宣言 
+型文字 $ %& !#@ 
+ビルドエラーの修正 
+
+--------------------------------------------------------------------------------
+
+VB標準関数
+【標準関数 A-H】 
+Fix関数 
+Format関数 数値編 
+
+【標準関数 I】 
+Int関数 
+IsNumeric関数 
+
+【標準関数 L-R】 
+LTrim関数 
+RTrim関数 
+
+【標準関数 S-Z】 
+Space関数 
+Trim関数 
+
+--------------------------------------------------------------------------------
+
+日付と時刻の関数（メソッド）
+【日付メソッド】 
+DateAndTime.Year 
+DateAndTime.Month 
+DateAndTime.Day 
+
+【時刻メソッド】 
+DateAndTime.Hour 
+DateAndTime.Minute 
+DateAndTime.Second 
+
+--------------------------------------------------------------------------------
+
+Math関数（メソッド）
+【メソッド A-F】 
+Math.Abs 
+Math.Ceiling 
+Math.Floor 
+
+【メソッド G-Q】 
+Math.Max 
+Math.Min 
+
+【メソッド R-Z】 
+Math.Round 
+Math.Sign 
+Math.Truncate 
+
