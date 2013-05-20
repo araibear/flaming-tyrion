@@ -1,0 +1,11 @@
+E:\flaming-tyrion\テストアプリ\テストアプリ\bin\Debug\テストアプリ.exe
+E:\flaming-tyrion\テストアプリ\テストアプリ\bin\Debug\テストアプリ.pdb
+E:\flaming-tyrion\テストアプリ\テストアプリ\bin\Debug\テストアプリ.xml
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.Form1.resources
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.Resources.resources
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.exe
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.xml
+E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.pdb
