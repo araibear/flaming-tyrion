@@ -9,3 +9,14 @@ E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateRe
 E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.exe
 E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.xml
 E:\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.pdb
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.exe
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.xml
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.pdb
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\bin\Debug\テストアプリ.exe
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\bin\Debug\テストアプリ.pdb
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\bin\Debug\テストアプリ.xml
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.Form1.resources
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.Resources.resources
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateResource.write.1.tlog
