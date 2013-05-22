@@ -1,0 +1,4 @@
+E:\flaming-tyrion\数値型と四則演算\数値型と四則演算\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\flaming-tyrion\数値型と四則演算\数値型と四則演算\obj\x86\Debug\ConsoleApplication1.Resources.resources
+E:\flaming-tyrion\数値型と四則演算\数値型と四則演算\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\flaming-tyrion\数値型と四則演算\数値型と四則演算\obj\x86\Debug\GenerateResource.write.1.tlog

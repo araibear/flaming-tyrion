@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "配列", "配列\配列.vbproj", "{B551CB09-B4E5-44C6-A693-B0608FE02C43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B551CB09-B4E5-44C6-A693-B0608FE02C43}.Debug|x86.ActiveCfg = Debug|x86
+		{B551CB09-B4E5-44C6-A693-B0608FE02C43}.Debug|x86.Build.0 = Debug|x86
+		{B551CB09-B4E5-44C6-A693-B0608FE02C43}.Release|x86.ActiveCfg = Release|x86
+		{B551CB09-B4E5-44C6-A693-B0608FE02C43}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

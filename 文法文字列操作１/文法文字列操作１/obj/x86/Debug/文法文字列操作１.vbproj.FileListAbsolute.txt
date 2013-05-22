@@ -1,0 +1,10 @@
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\ConsoleApplication1.Resources.resources
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\bin\Debug\文法文字列操作１.exe
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\bin\Debug\文法文字列操作１.pdb
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\bin\Debug\文法文字列操作１.xml
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\文法文字列操作１.exe
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\文法文字列操作１.xml
+E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Debug\文法文字列操作１.pdb
