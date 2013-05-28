@@ -1,0 +1,12 @@
+2013-05-28 11:05:44,116 [9] DEBUG ConsoleApplication1.Module1 - Program Started
+2013-05-28 11:05:44,132 [9] FATAL ConsoleApplication1.Module1 - Program が終了します
+2013-05-28 11:06:18,418 [1] DEBUG ConsoleApplication1.Module1 - Program Started
+2013-05-28 11:06:18,464 [1] FATAL ConsoleApplication1.Module1 - Program が終了します
+2013-05-28 14:05:29,700 [1] DEBUG ConsoleApplication1.Module1 - program started.
+2013-05-28 14:05:29,716 [1] INFO  ConsoleApplication1.someclass - program continued....
+2013-05-28 14:05:29,731 [1] INFO  ConsoleApplication1.someclass - mymethod:今日の日付 Date:05/28/2013 14:05:29
+2013-05-28 14:05:29,731 [1] FATAL ConsoleApplication1.Module1 - Program  ended!
+2013-05-28 14:07:47,265 [1] DEBUG ConsoleApplication1.Module1 - program started.
+2013-05-28 14:07:47,265 [1] INFO  ConsoleApplication1.someclass - program continued....
+2013-05-28 14:07:47,280 [1] INFO  ConsoleApplication1.someclass - mymethod:今日の日付 Date:05/28/2013 14:07:47
+2013-05-28 14:07:47,280 [1] FATAL ConsoleApplication1.Module1 - Program  ended!
