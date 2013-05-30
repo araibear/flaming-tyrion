@@ -1,0 +1,10 @@
+D:\佐々木の資料\flaming-tyrion\配列\配列\bin\Debug\配列.exe
+D:\佐々木の資料\flaming-tyrion\配列\配列\bin\Debug\配列.pdb
+D:\佐々木の資料\flaming-tyrion\配列\配列\bin\Debug\配列.xml
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\ConsoleApplication1.Resources.resources
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\配列.exe
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\配列.xml
+D:\佐々木の資料\flaming-tyrion\配列\配列\obj\x86\Debug\配列.pdb
