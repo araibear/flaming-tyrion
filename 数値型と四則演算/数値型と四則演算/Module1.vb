@@ -40,9 +40,10 @@
         ' 整数値変数の宣言と代入
         a = 100000000
         b = 1000
-        ans = 0
+        Dim ansD As Double
         ' 演算結果は、ans変数には入りきらない大きい整数値（オーバーフロー）
         'ans = a * b
+        ansD = Double.Parse(a) * Double.Parse(b)
         Console.WriteLine(ans)
 
 

@@ -30,7 +30,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(53, 184)
+        Me.Button1.Location = New System.Drawing.Point(15, 249)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(179, 70)
         Me.Button1.TabIndex = 0
@@ -39,32 +39,34 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(53, 78)
+        Me.TextBox1.Location = New System.Drawing.Point(19, 130)
+        Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(179, 19)
+        Me.TextBox1.Size = New System.Drawing.Size(367, 113)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(53, 29)
+        Me.TextBox2.Location = New System.Drawing.Point(19, 26)
+        Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 19)
+        Me.TextBox2.Size = New System.Drawing.Size(211, 80)
         Me.TextBox2.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(53, 11)
+        Me.Label1.Location = New System.Drawing.Point(17, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 12)
+        Me.Label1.Size = New System.Drawing.Size(54, 12)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "品番ID"
+        Me.Label1.Text = "入力エリア"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(292, 266)
+        Me.ClientSize = New System.Drawing.Size(409, 334)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)

@@ -8,3 +8,13 @@ E:\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\GenerateResource.wri
 E:\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\繰り返し.exe
 E:\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\繰り返し.xml
 E:\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\繰り返し.pdb
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\繰り返し.exe
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\繰り返し.xml
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\繰り返し.pdb
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\bin\Release\繰り返し.exe
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\bin\Release\繰り返し.pdb
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\bin\Release\繰り返し.xml
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\ConsoleApplication1.Resources.resources
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\繰り返し\繰り返し\obj\x86\Release\GenerateResource.write.1.tlog

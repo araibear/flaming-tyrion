@@ -31,7 +31,7 @@
         Console.WriteLine("細かい円周率に直してEnterキーを押してください。Pi = 301415")
         InStr3 = Console.ReadLine()
         ' 文字列を整数に変換して配列に保存
-        pi = Double.Parse(InStr1)
+        pi = Double.Parse(InStr3)
         Tri2.Pi = pi
         Console.WriteLine("円周率は" & Tri2.Pi & "です")
         ' 斜辺を２で割って、半径とし、円の面積を求める

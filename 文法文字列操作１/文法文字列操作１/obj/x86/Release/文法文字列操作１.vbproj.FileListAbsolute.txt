@@ -8,3 +8,6 @@ E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Rele
 E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Release\文法文字列操作１.exe
 E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Release\文法文字列操作１.xml
 E:\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Release\文法文字列操作１.pdb
+D:\佐々木の資料\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Release\文法文字列操作１.exe
+D:\佐々木の資料\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Release\文法文字列操作１.xml
+D:\佐々木の資料\flaming-tyrion\文法文字列操作１\文法文字列操作１\obj\x86\Release\文法文字列操作１.pdb
