@@ -1,1 +1,12 @@
 D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\bin\Release\ＡＰＩ.exe.config
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\bin\Release\ＡＰＩ.exe
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\bin\Release\ＡＰＩ.pdb
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\bin\Release\ＡＰＩ.xml
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\bin\Release\TwitterVB.dll
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\ConsoleApplication1.Resources.resources
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\GenerateResource.write.1.tlog
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\ＡＰＩ.exe
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\ＡＰＩ.xml
+D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Release\ＡＰＩ.pdb

@@ -1,0 +1,5 @@
+D:\佐々木の資料\flaming-tyrion\テストライブラリシャープ\テストライブラリシャープ\bin\Release\テストライブラリシャープ.dll
+D:\佐々木の資料\flaming-tyrion\テストライブラリシャープ\テストライブラリシャープ\bin\Release\テストライブラリシャープ.pdb
+D:\佐々木の資料\flaming-tyrion\テストライブラリシャープ\テストライブラリシャープ\obj\Release\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\テストライブラリシャープ\テストライブラリシャープ\obj\Release\テストライブラリシャープ.dll
+D:\佐々木の資料\flaming-tyrion\テストライブラリシャープ\テストライブラリシャープ\obj\Release\テストライブラリシャープ.pdb

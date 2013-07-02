@@ -1,5 +1,6 @@
 ﻿Imports TwitterVB2
-
+Imports System.Web
+Imports System.Net
 Module Module1
 
 
@@ -15,19 +16,28 @@ Module Module1
         Dim TokenSecret As String = "JM2vfWiYFRSaLRegesRgW0WSv2IzmRH0AJbCzfOqk"
 
 
+        Dim a As TwitterVB2.TwitterOAuth.Method
+        a.ToString()
         tw.AuthenticateWith(ConsumerKey, ConsumerSecret, TokenKey, TokenSecret)
         'タイムライン取得
         Try
-            For Each Tweet As TwitterStatus In tw.HomeTimeline
-                Console.WriteLine(Tweet.User.ScreenName & " : " & Tweet.Text)
+            Dim tp As New TwitterParameters
+            tp.Add(TwitterParameterNames.Count, 50)
+            For Each status As TwitterStatus In tw.HomeTimeline(tp)
+                Console.WriteLine(status.User.ScreenName & " : " & status.Text)
             Next
         Catch ex As Exception
-            'Throw ex
+            Console.WriteLine(ex)
         End Try
         
 
         'つぶやき投稿
-        'Dim TweetStatus As TwitterStatus = tw.Update("Hello")
+        Try
+            'Dim TweetStatus As TwitterStatus = tw.Update("Hello")
+        Catch ex As Exception
+            Console.WriteLine(ex)
+        End Try
+
 
 
 
