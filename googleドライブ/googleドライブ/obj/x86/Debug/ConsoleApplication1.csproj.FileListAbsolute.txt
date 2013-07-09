@@ -1,4 +1,0 @@
-C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.Properties.Resources.resources
-C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\ConsoleApplication1\obj\x86\Debug\GenerateResource.write.1.tlog

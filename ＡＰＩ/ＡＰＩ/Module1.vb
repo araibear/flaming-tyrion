@@ -3,7 +3,8 @@ Imports System.Web
 Imports System.Net
 Module Module1
 
-
+    Dim id As String = ""
+    Dim pass As String = ""
 
     Sub Main()
         Dim tw As New TwitterAPI
@@ -14,6 +15,20 @@ Module Module1
         Dim ConsumerSecret As String = "gAV3E9ZFa2KH55LazweLdW6ArNDWLpNy2zQE7UiFBCU"
         Dim TokenKey As String = "1003644312-DoTcXDItPOUFj8JEWCcJHJGvnISl6wAKcOIPDWx"
         Dim TokenSecret As String = "JM2vfWiYFRSaLRegesRgW0WSv2IzmRH0AJbCzfOqk"
+
+
+        Dim req As WebRequest = CreateWebRequest("http://twitter.com/account/rate_limit_status.xml")
+        req.Method = "GET"
+        Try
+            Dim wr As HttpWebResponse
+            wr = req.GetResponse()
+            Dim ht As HttpStatusCode = wr.StatusCode
+            wr.Close()
+            ht = HttpStatusCode.OK
+        Catch ex As Exception
+            Console.WriteLine(ex)
+        End Try
+        
 
 
         Dim a As TwitterVB2.TwitterOAuth.Method
@@ -42,5 +57,18 @@ Module Module1
 
 
     End Sub
+
+
+    Private Function CreateWebRequest(ByRef Uri As String) As WebRequest
+        Dim req As WebRequest = HttpWebRequest.Create(Uri)
+        req.ContentType = "application/x-www-form-urlencoded"
+        req.Headers.Add("a")
+        Return req
+    End Function
+    Private Function CreateAuthString() As String()
+        Return "Authorization: Basic " & Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(id & ":" & pass))
+    End Function
+
+
 
 End Module

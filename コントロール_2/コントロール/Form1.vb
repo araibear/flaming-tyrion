@@ -85,6 +85,7 @@
         Label2.Text = "テンプレート"
         Label3.Text = "本文"
         Label4.Text = "誕生日"
+        Label5.Text = "初期表示しました"
         Me.MaximizeBox = True
         Me.MinimizeBox = True
         Me.ControlBox = True
@@ -369,27 +370,33 @@
 
         Dim Writer As New IO.StreamWriter(fPath & "\VBTest.txt", False, System.Text.Encoding.UTF8)
         'お名前
+        If card.nTitle = 1 Then
+            Line = card.Name & "ちゃん" & "へ"
+        Else
+            Line = card.Name & "へ"
+        End If
+
         Writer.WriteLine(Line)
-        Writer.WriteLine(vbLf)
         '年齢
+        Line = age.ToString & "才のお誕生日おめでとう！"
         Writer.WriteLine(Line)
-        Writer.WriteLine(vbLf)
+        Line = ""
         For i = 0 To RichTextBox1.Lines.Length - 1
 
             Line = RichTextBox1.Lines(i)
             If InStr(Line, "{0}") > 0 Then
-                Replace(Line, "{0}", age.ToString)
+                Line = Replace(Line, "{0}", age.ToString)
             End If
             If InStr(Line, "{n}") > 0 Then
-                Replace(Line, "{n}", card.Name)
+                Line = Replace(Line, "{n}", card.Name)
             End If
             Writer.WriteLine(Line)
 
         Next
 
         Writer.WriteLine(Date.Now.ToString("yyyy年MM月dd日") & "にて")
-        Writer.WriteLine(vbLf)
-        Writer.WriteLine(vbLf)
+        Writer.WriteLine(vbCrLf)
+        Writer.WriteLine(vbCrLf)
         Writer.Close()
         Return 0
     End Function
@@ -474,17 +481,19 @@ System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
     Public Function InsertBCard(ByRef card() As String)
 
         Dim strSQL, strBuf1, strBuf2 As String
-        Dim sLen As Integer
-        strSQL = InsertPreStr
+        Dim sLen, scLen1, scLen2 As Integer
+        strSQL = ""
+        strBuf1 = ""
+        strBuf2 = InsertPreStr
         '入力項目回？の置き換えを行う
         For i = 0 To card.Length - 1
-            sLen = InStr(strSQL, "?")
+            sLen = InStr(strBuf2, "?")
             '？がある場合、手前から置き換えし、なくなったら入力項目数オーバーでエラー
             If (sLen > 0) Then
-                strBuf1 = strSQL.Substring(0, sLen)
-                strBuf2 = strSQL.Substring(sLen)
+                strBuf1 = strBuf2.Substring(0, sLen)
+                strBuf2 = strBuf2.Substring(sLen)
                 strBuf1 = Replace(strBuf1, "?", "'" & card(i) & "'")
-                strSQL = strBuf1 + strBuf2
+                strSQL &= strBuf1
             Else
                 If card(i) <> "In" Then
                     MsgBox("入力項目が多すぎます")
@@ -494,10 +503,21 @@ System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             End If
         Next
+        strSQL &= strBuf2
         '再度？を確認し、あれば、置き換えする入力項目不足でエラー
+        sLen = 0
+        scLen1 = 0
+        scLen2 = 0
         If InStr(strSQL, "?") > 0 Then
-            MsgBox("入力項目が足りません")
-            strSQL = "-1"
+            sLen = InStr(strSQL, "?")
+            strBuf1 = strSQL.Substring(0, sLen)
+            strBuf2 = strSQL.Substring(sLen)
+            scLen1 = InStr(strBuf1, "'")
+            scLen2 = InStr(strBuf2, "'")
+            If (scLen1 <= 0) And (scLen2 <= 0) Then
+                MsgBox("入力項目が足りません")
+                strSQL = "-1"
+            End If
         End If
         Return strSQL
     End Function
@@ -528,27 +548,40 @@ System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
     '******1*********2*********3*********4*********5**********6*****
     Public Function UpdateBCard(ByRef card() As String)
         Dim strSQL, strBuf1, strBuf2 As String
-        Dim sLen As Integer
-        strSQL = UpdatePreStr
+        Dim sLen, scLen1, scLen2 As Integer
+        strSQL = ""
+        strBuf1 = ""
+        strBuf2 = UpdatePreStr
         '入力項目回？の置き換えを行う
         For i = 0 To card.Length - 1
-            sLen = InStr(strSQL, "?")
+            sLen = InStr(strBuf2, "?")
             '？がある場合、手前から置き換えし、なくなったら入力項目数オーバーでエラー
             If (sLen > 0) Then
-                strBuf1 = strSQL.Substring(0, sLen)
-                strBuf2 = strSQL.Substring(sLen)
+                strBuf1 = strBuf2.Substring(0, sLen)
+                strBuf2 = strBuf2.Substring(sLen)
                 strBuf1 = Replace(strBuf1, "?", "'" & card(i) & "'")
-                strSQL = strBuf1 + strBuf2
+                strSQL &= strBuf1
             Else
                 MsgBox("入力項目が多すぎます")
                 strSQL = "-1"
                 Exit For
             End If
         Next
+        strSQL &= strBuf2
         '再度？を確認し、あれば、置き換えする入力項目不足でエラー
+        sLen = 0
+        scLen1 = 0
+        scLen2 = 0
         If InStr(strSQL, "?") > 0 Then
-            MsgBox("入力項目が足りません")
-            strSQL = "-1"
+            sLen = InStr(strSQL, "?")
+            strBuf1 = strSQL.Substring(0, sLen)
+            strBuf2 = strSQL.Substring(sLen)
+            scLen1 = InStr(strBuf1, "'")
+            scLen2 = InStr(strBuf2, "'")
+            If (scLen1 <= 0) And (scLen2 <= 0) Then
+                MsgBox("入力項目が足りません")
+                strSQL = "-1"
+            End If
         End If
         Return strSQL
     End Function
