@@ -1,0 +1,5 @@
+D:\佐々木の資料\flaming-tyrion\ライブラリの使用\ライブライの使用\obj\x86\Debug\Interop.Shell32.dll
+D:\佐々木の資料\flaming-tyrion\ライブラリの使用\ライブライの使用\obj\x86\Debug\ライブラリの使用.vbproj.ResolveComReference.cache
+D:\佐々木の資料\flaming-tyrion\ライブラリの使用\ライブライの使用\obj\x86\Debug\ライブライの使用.exe
+D:\佐々木の資料\flaming-tyrion\ライブラリの使用\ライブライの使用\obj\x86\Debug\ライブライの使用.xml
+D:\佐々木の資料\flaming-tyrion\ライブラリの使用\ライブライの使用\obj\x86\Debug\ライブライの使用.pdb
