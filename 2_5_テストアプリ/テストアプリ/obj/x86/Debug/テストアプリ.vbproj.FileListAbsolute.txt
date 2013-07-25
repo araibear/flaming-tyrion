@@ -20,3 +20,6 @@ D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x
 D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.Resources.resources
 D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\佐々木の資料\flaming-tyrion\テストアプリ\テストアプリ\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\佐々木の資料\flaming-tyrion\2_5_テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.exe
+D:\佐々木の資料\flaming-tyrion\2_5_テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.xml
+D:\佐々木の資料\flaming-tyrion\2_5_テストアプリ\テストアプリ\obj\x86\Debug\テストアプリ.pdb

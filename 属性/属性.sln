@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "属性", "属性\属性.vbproj", "{31C17EAC-47A4-4354-A3AF-220ED02AC765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31C17EAC-47A4-4354-A3AF-220ED02AC765}.Debug|x86.ActiveCfg = Debug|x86
+		{31C17EAC-47A4-4354-A3AF-220ED02AC765}.Debug|x86.Build.0 = Debug|x86
+		{31C17EAC-47A4-4354-A3AF-220ED02AC765}.Release|x86.ActiveCfg = Release|x86
+		{31C17EAC-47A4-4354-A3AF-220ED02AC765}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

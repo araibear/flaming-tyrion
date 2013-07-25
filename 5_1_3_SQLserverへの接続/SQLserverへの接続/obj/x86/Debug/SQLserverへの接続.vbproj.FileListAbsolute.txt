@@ -9,3 +9,14 @@ D:\佐々木の資料\flaming-tyrion\SQLserverへの接続\SQLserverへの接続
 D:\佐々木の資料\flaming-tyrion\SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\SQLserverへの接続.exe
 D:\佐々木の資料\flaming-tyrion\SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\SQLserverへの接続.xml
 D:\佐々木の資料\flaming-tyrion\SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\SQLserverへの接続.pdb
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\SQLserverへの接続.exe
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\SQLserverへの接続.xml
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\SQLserverへの接続.pdb
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\bin\Debug\SQLserverへの接続.exe
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\bin\Debug\SQLserverへの接続.pdb
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\bin\Debug\SQLserverへの接続.xml
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\5_1_3_SQLserverへの接続\SQLserverへの接続\obj\x86\Debug\GenerateResource.write.1.tlog

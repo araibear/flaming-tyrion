@@ -37,7 +37,7 @@
         ' 接続文字列をConnectionStringにセットする
         Cn.ConnectionString = St
         SQL = Cn.CreateCommand
-        ' ここまではきめうちで設定しておく
+        ' ここまではきめ決め打ちで設定しておく
 
         ' SQLcreater（ＳＱＬ文作成メソッド）を宣言する
         Dim creater As New SQLcreater
@@ -63,6 +63,8 @@
         '　DBアクセスはプログラム以外でのエラー発生の可能性があるので、try句でくるむ START ==***
         Try
             Cn.Open()
+            'データソース（接続の確認
+            'TextBox1.Text = Cn.DataSource.ToString()
             '********************************************************************************
             '①CreateCommand.ExecuteScalar：単一行単一項目のIntegerで返却
             '②CreateCommand.ExecuteNonQuery：カタログなし更新・登録可能

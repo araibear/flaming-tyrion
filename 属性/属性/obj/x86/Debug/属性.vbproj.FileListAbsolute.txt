@@ -1,0 +1,14 @@
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\bin\Debug\属性.exe
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\bin\Debug\属性.pdb
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\bin\Debug\属性.xml
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\属性.Form1.resources
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\属性.Resources.resources
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\属性.exe
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\属性.xml
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\属性\obj\x86\Debug\属性.pdb
+D:\佐々木の資料\flaming-tyrion\属性\属性\obj\x86\Debug\属性.exe
+D:\佐々木の資料\flaming-tyrion\属性\属性\obj\x86\Debug\属性.xml
+D:\佐々木の資料\flaming-tyrion\属性\属性\obj\x86\Debug\属性.pdb
