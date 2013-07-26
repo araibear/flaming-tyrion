@@ -39,7 +39,7 @@
         Me.WindowState = FormWindowState.Normal
         ComboBox1.Text = "はじめ"
     End Sub
-    Private Sub Form1_MouseClick(sender As System.Object, e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseClick
+    Private Sub Form1_MouseClick(sender As System.Object, e As System.Windows.Forms.MouseEventArgs) Handles MyBase.MouseClick, RichTextBox1.MouseClick
         Dim x, y As Integer
         Dim mType As String
         x = e.X

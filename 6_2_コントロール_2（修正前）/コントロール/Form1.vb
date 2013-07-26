@@ -55,49 +55,32 @@
     ' 戻値：なし
     '******1*********2*********3*********4*********5**********6*****
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+        'フォルダの雛形ファイルからリストボックスを作る 
+        ListBox1.Items.Clear()
+        Dim files As String() = System.IO.Directory.GetFiles( _
+           LISTPATHE, "*.txt", System.IO.SearchOption.AllDirectories)
+        'ファイルパスをコピーしておく()
+        filesBack = files.Clone
+        'ファイルのパスと拡張子を取り除く
+        Dim strl As Integer = 0
+        For i = 0 To files.Length - 1
+            strl = InStr(files(i), LISTPATHE) + LISTPATHE.Length
+            files(i) = files(i).Substring(strl)
+            strl = InStr(files(i), ".txt")
+            files(i) = files(i).Substring(0, strl)
+
+        Next
+
+        'ListBox1に結果を表示する
+        ListBox1.Items.AddRange(files)
+
+        ListBox1.SelectedIndex = 0
+
+        '初期設定項目
         Me.Text = FRMTITLE
         Button1.Text = BTNTITLE
-        ListBox1.Items.Clear()
-        Dim files As String()
-        Dim i As Integer
-        Dim strx As String = e.ToString
-        Try
-            files = System.IO.Directory.GetFiles( _
-    LISTPATHE, "*.txt", System.IO.SearchOption.AllDirectories)
-            'ファイルパスをコピーしておく()
-            filesBack = files.Clone
-            'ファイルのパスと拡張子を取り除く
-            Dim strl As Integer = 0
-            For i = 0 To files.Length - 1
-                strl = InStr(files(i), LISTPATHE) + LISTPATHE.Length
-                files(i) = files(i).Substring(strl)
-                strl = InStr(files(i), ".txt")
-                files(i) = files(i).Substring(0, strl)
 
-
-            Next
-            'ListBox1に結果を表示する
-            ListBox1.Items.AddRange(files)
-            ListBox1.SelectedIndex = 0
-        Catch ex As Exception
-            MsgBox(LISTPATHE & "フォルダがありません。")
-            ListBox1.Items.Clear()
-        End Try
-
-        Button1.Text = BTNTITLE
-        TextBoxDay.Text = "//"
-        MonthCalendar1.SetDate(Date.Now)
-        CheckBox1.Checked = False
-        RadioButton1.Checked = False
-        RadioButton2.Checked = False
-        Label2.Text = "テンプレート"
-        Label3.Text = "本文"
-        Label4.Text = "誕生日"
-        Label5.Text = "初期表示しました"
-        Me.MaximizeBox = True
-        Me.MinimizeBox = True
-        Me.ControlBox = True
-        Me.WindowState = FormWindowState.Normal
 
     End Sub
 #Region "ボタンホバーのリージョン==========================================================="
@@ -124,12 +107,6 @@
             MsgBox("氏名の入力が不正です。")
             Exit Sub
         End If
-        Try
-            Dim sDate As Date = TextBoxDay.Text.ToString
-            MonthCalendar1.SetDate(sDate)
-        Catch ex As Exception
-            MsgBox("誕生日を正確に入力してください。")
-        End Try
         If MonthCalendar1.SelectionRange.End > Date.Now Then
             MsgBox("誕生日が不正です。")
             Exit Sub
@@ -143,6 +120,8 @@
             MsgBox("本文の入力は1000文字までにしてください。")
             Exit Sub
         End If
+        Dim sDate As Date = TextBoxDay.Text.ToString
+
 
         card = CtrlSet()
 
@@ -208,7 +187,7 @@
     ' 引数：
     ' 戻値：なし
     '******1*********2*********3*********4*********5**********6*****
-    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As System.Object, e As System.EventArgs)
         If statId = 0 Then
             MsgBox("このカードは登録されていません。")
             Exit Sub
@@ -484,7 +463,7 @@
     ' 引数：ログレベル(level)、ログメッセージ(mes)
     ' 戻値：なし
     '******1*********2*********3*********4*********5**********6*****
-    Private Sub LogCreater(ByRef level As String, ByRef mes As String)
+    Private Sub LogCreater(level As String, ByRef mes As String)
         Dim Line As String = ""
         Dim log As tLog
         log.appName = My.Application.Info.Title

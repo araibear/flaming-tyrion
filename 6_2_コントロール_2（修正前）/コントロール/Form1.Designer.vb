@@ -38,7 +38,6 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -150,6 +149,7 @@ Partial Class Form1
         Me.TextBoxDay.Name = "TextBoxDay"
         Me.TextBoxDay.Size = New System.Drawing.Size(131, 19)
         Me.TextBoxDay.TabIndex = 11
+        Me.TextBoxDay.Text = "//"
         '
         'Label2
         '
@@ -187,21 +187,11 @@ Partial Class Form1
         Me.Label5.Size = New System.Drawing.Size(0, 12)
         Me.Label5.TabIndex = 15
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(180, 48)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(22, 18)
-        Me.Button3.TabIndex = 16
-        Me.Button3.Text = "*"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(417, 402)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -240,6 +230,5 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class

@@ -41,9 +41,10 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(20, 14)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 12)
+        Me.Label1.Size = New System.Drawing.Size(84, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "お友達のお名前"
+        Me.Label1.UseCompatibleTextRendering = True
         '
         'TextBox1
         '
@@ -113,6 +114,7 @@ Partial Class Form1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(23, 237)
         Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth
         Me.RichTextBox1.Size = New System.Drawing.Size(341, 50)
         Me.RichTextBox1.TabIndex = 8
         Me.RichTextBox1.Text = ""
