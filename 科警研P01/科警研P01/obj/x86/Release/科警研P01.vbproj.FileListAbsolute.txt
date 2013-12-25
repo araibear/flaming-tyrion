@@ -1,0 +1,11 @@
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\bin\Release\科警研P01.exe
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\bin\Release\科警研P01.pdb
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\bin\Release\科警研P01.xml
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\科警研P01.Form1.resources
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\科警研P01.Resources.resources
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\GenerateResource.write.1.tlog
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\科警研P01.exe
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\科警研P01.xml
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Release\科警研P01.pdb

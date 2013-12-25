@@ -1,0 +1,11 @@
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\bin\Debug\科警研筆跡検索.exe
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\bin\Debug\科警研筆跡検索.pdb
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\bin\Debug\科警研筆跡検索.xml
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\科警研筆跡検索.Form1.resources
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\科警研筆跡検索.Resources.resources
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\科警研筆跡検索.exe
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\科警研筆跡検索.xml
+D:\佐々木の資料\flaming-tyrion\科警研筆跡検索\科警研筆跡検索\obj\x86\Debug\科警研筆跡検索.pdb

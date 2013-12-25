@@ -8,3 +8,6 @@ D:\佐々木の資料\flaming-tyrion\名前空間\名前空間\obj\x86\Release\G
 D:\佐々木の資料\flaming-tyrion\名前空間\名前空間\obj\x86\Release\名前空間.exe
 D:\佐々木の資料\flaming-tyrion\名前空間\名前空間\obj\x86\Release\名前空間.xml
 D:\佐々木の資料\flaming-tyrion\名前空間\名前空間\obj\x86\Release\名前空間.pdb
+D:\佐々木の資料\flaming-tyrion\3_5_名前空間\名前空間\obj\x86\Release\名前空間.exe
+D:\佐々木の資料\flaming-tyrion\3_5_名前空間\名前空間\obj\x86\Release\名前空間.xml
+D:\佐々木の資料\flaming-tyrion\3_5_名前空間\名前空間\obj\x86\Release\名前空間.pdb

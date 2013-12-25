@@ -1,0 +1,22 @@
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\bin\Debug\色取得テスト.exe
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\bin\Debug\色取得テスト.pdb
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\bin\Debug\色取得テスト.xml
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\色取得テスト.Form1.resources
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\色取得テスト.Resources.resources
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\色取得テスト.exe
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\色取得テスト.xml
+C:\Documents and Settings\sasaki\Local Settings\Application Data\Temporary Projects\色取得テスト\obj\x86\Debug\色取得テスト.pdb
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\bin\Debug\色取得テスト.exe
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\bin\Debug\色取得テスト.pdb
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\bin\Debug\色取得テスト.xml
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\色取得テスト.Form1.resources
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\色取得テスト.Resources.resources
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\色取得テスト.exe
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\色取得テスト.xml
+D:\佐々木の資料\flaming-tyrion\色取得テスト\色取得テスト\obj\x86\Debug\色取得テスト.pdb
