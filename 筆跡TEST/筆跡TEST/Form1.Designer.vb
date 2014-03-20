@@ -46,17 +46,23 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label
         Me.ListBox1 = New System.Windows.Forms.ListBox
         Me.Panel1 = New System.Windows.Forms.Panel
+        Me.Button5 = New System.Windows.Forms.Button
+        Me.Panel2 = New System.Windows.Forms.Panel
+        Me.Button7 = New System.Windows.Forms.Button
+        Me.Button8 = New System.Windows.Forms.Button
+        Me.Label4 = New System.Windows.Forms.Label
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1297, 545)
+        Me.PictureBox1.Size = New System.Drawing.Size(700, 545)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
@@ -85,14 +91,14 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(1269, 731)
+        Me.TextBox2.Location = New System.Drawing.Point(774, 739)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(75, 19)
         Me.TextBox2.TabIndex = 5
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(1359, 731)
+        Me.TextBox3.Location = New System.Drawing.Point(864, 739)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(75, 19)
         Me.TextBox3.TabIndex = 6
@@ -146,9 +152,9 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(130, 608)
+        Me.PictureBox2.Location = New System.Drawing.Point(3, -7)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1313, 116)
+        Me.PictureBox2.Size = New System.Drawing.Size(1400, 77)
         Me.PictureBox2.TabIndex = 13
         Me.PictureBox2.TabStop = False
         '
@@ -249,7 +255,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(132, 731)
+        Me.Label3.Location = New System.Drawing.Point(132, 850)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(47, 12)
         Me.Label3.TabIndex = 23
@@ -271,20 +277,70 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(132, 51)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1311, 551)
+        Me.Panel1.Size = New System.Drawing.Size(704, 551)
         Me.Panel1.TabIndex = 25
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(544, 11)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(118, 30)
+        Me.Button5.TabIndex = 26
+        Me.Button5.Text = "印刷"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.AutoScroll = True
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Location = New System.Drawing.Point(111, 604)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(780, 87)
+        Me.Panel2.TabIndex = 27
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(723, 11)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(29, 24)
+        Me.Button7.TabIndex = 28
+        Me.Button7.Text = "<"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(804, 13)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(30, 23)
+        Me.Button8.TabIndex = 29
+        Me.Button8.Text = ">"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.Menu
+        Me.Label4.Location = New System.Drawing.Point(772, 20)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(17, 12)
+        Me.Label4.TabIndex = 30
+        Me.Label4.Text = "01"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1444, 753)
+        Me.ClientSize = New System.Drawing.Size(952, 714)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.CheckBox6)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -295,13 +351,15 @@ Partial Class Form1
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
+        Me.Text = "筆跡検索システム"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -330,5 +388,10 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 
 End Class

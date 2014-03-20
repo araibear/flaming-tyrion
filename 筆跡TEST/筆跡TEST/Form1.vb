@@ -27,6 +27,9 @@ Public Class Form1
     Dim HTJflg As Boolean = False
     'くり抜き幅
     Public rctSize As Integer = 100
+    Public Page As Integer = 0
+    Public MAXPAGE As Integer = 1
+
     '行間
     Public rowW As Integer = 120
     Private Sub Button1_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -67,8 +70,15 @@ Public Class Form1
         Dim grPage As Graphics()
         ListBox1.Items.Clear()
         ''描画先とするImageオブジェクトを作成する
-        Dim canvas As New Bitmap(1500, PictureBox1.Height)
+        Dim canvas As New Bitmap(600, PictureBox1.Height)
         myfnt = New System.Drawing.Font(FNTYPE, FNTPT)
+        Dim gr2 As Graphics = PictureBox2.CreateGraphics()
+        gr2.Clear(Color.White)
+        Page = 0
+        MAXPAGE = 0
+        Label4.Text = (Page + 1) & "/" & MAXPAGE
+
+
 
         ' ｷｬﾗｸﾀｰ位置指定
         CharaPosition.X = 0
@@ -96,7 +106,7 @@ Public Class Form1
             strKeyb = KANA & "_" & "*.bmp"
             'チェックボックスの確認
             files = System.IO.Directory.GetFiles( _
-                  "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                  "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
             'ListBox1に結果を表示する
             ListBox1.Items.AddRange(files)
 
@@ -107,7 +117,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_1.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -115,7 +125,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_2.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -123,7 +133,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_3.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -131,7 +141,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_4.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -139,7 +149,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_5.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -147,43 +157,69 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_*.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
             HTJflg = True
             ListBox1.Sorted = True
-            End If
-
-        If ListBox1.Items.Count > 10 Then
-            Dim v As Integer = ListBox1.Items.Count / 10
-            canvas = New Bitmap(1500, v * rowW)
         End If
 
+        Dim v As Integer = 0
+        If ListBox1.Items.Count > 5 Then
+            v = ListBox1.Items.Count / 5
+            canvas = New Bitmap(600, 620)
+        End If
+        PictureBox1.Image = canvas
 
+        '前回の名前 20140204
+        Dim OldName As String = ""
+        Dim iName As Integer
+        If files.Length = 0 Then
+            MsgBox("画像ファイルがありません。")
+            Exit Sub
+        Else
+            iName = InStr(ListBox1.Items(0), ".bmp")
+        End If
+        OldName = ListBox1.Items(0).Substring(iName - 6, 3)
         Dim row As Integer = 0
         For Each strList As String In ListBox1.Items
-            If row = 10 Then
-                CharaPosition.X = 0
-                CharaPosition.Y += rowW
-                row = 0
+            '被験者が異なると改行
+            iName = InStr(strList, ".bmp")
+            'If row = 10 Then
+            If strList.Substring(iName - 6, 3) <> OldName Then
+                MAXPAGE += 1
             End If
-            CharacterImg = New Bitmap(strList) ' 文字画像
-            ' ｷｬﾗｸﾀｰ画像の描画
-            grPage(0).DrawImage(CharacterImg, CharaPosition)
-            grPage(0).DrawString(FindMonit(strList), myfnt, Brushes.Black, CharaPosition.X, CharaPosition.Y + rctSize)
-            CharaPosition.X += rctSize
-            CharaPosition.Y += 0
-            row += 1
+            OldName = strList.Substring(iName - 6, 3)
         Next
+        If MAXPAGE Mod 5 = 0 Then
+            MAXPAGE = MAXPAGE \ 5
+        Else
+            MAXPAGE = (MAXPAGE \ 5) + 1
+        End If
+        Label4.Text = (Page + 1) & "/" & MAXPAGE
+
         If HTJflg And CheckBox6.Checked Then
             hitujyunWriter()
         End If
 
+
+        'コントロールの外観を描画するBitmapの作成
+        Dim bmp As New Bitmap(Me.Width, Me.Height)
+
+        'キャプチャする
+        PictureBox1.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
+        'ファイルに保存する
+        bmp.Save("F:\筆跡判定\tmp\1.png")
+        '後始末
+        bmp.Dispose()
+
+
         ''リソースを解放する
         grPage(0).Dispose()
         'PictureBox1に表示する
-        PictureBox1.Image = canvas
+        'PictureBox1.Image = canvas
+        'Me.Size = New Size(960, 752)
         '処理の終了宣言
         Label3.Text = "検索処理が完了しました。" & " 文字:" & KANA & ",被験者番号:" & monitID
 
@@ -200,7 +236,7 @@ Public Class Form1
         Dim files As String()
 
         '描画先とするImageオブジェクトを作成する
-        Dim canvas As New Bitmap(PictureBox2.Width, PictureBox2.Height)
+        Dim canvas As New Bitmap(1400, PictureBox2.Height)
         'ImageオブジェクトのGraphicsオブジェクトを作成する
         Dim g As Graphics = Graphics.FromImage(canvas)
         g.Clear(Color.White)
@@ -210,12 +246,20 @@ Public Class Form1
         strKeyc = KANA & "_" & monitID & "_" & pCnt & ".csv"
 
         files = System.IO.Directory.GetFiles( _
-                    "D:\佐々木の資料\科警研", strKeyc, System.IO.SearchOption.AllDirectories)
+                    "F:\筆跡判定", strKeyc, System.IO.SearchOption.AllDirectories)
         If files.Length > 1 Then
             csvfile = files(0)
             MsgBox("CSVファイルが複数あります。" & files(1))
         Else
-            csvfile = files(0)
+            If files.Length = 0 Then
+                MsgBox("CSVファイルがありません。")
+                Dim gr2 As Graphics = PictureBox2.CreateGraphics()
+                gr2.Clear(Color.White)
+                Exit Sub
+            Else
+                csvfile = files(0)
+            End If
+
         End If
 
         flg = 0
@@ -402,6 +446,7 @@ Public Class Form1
         Else
             TextBox1.Text = StrConv(TextBox1.Text, Microsoft.VisualBasic.VbStrConv.Narrow, &H411)
             KANA = TextBox1.Text
+            KANA = KANA.Substring(0, 1)
         End If
         '検索文字ファイルの作成
         If Char.IsLower(KANA) Then
@@ -446,31 +491,73 @@ Public Class Form1
     Private Sub PictureBox1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles PictureBox1.Paint
         myfnt = New System.Drawing.Font(FNTYPE, FNTPT)
         Dim row As Integer = 0
-
-
+        Dim TOTALROW As Integer = 0
         e.Graphics.Clear(Color.White)
         ' ｷｬﾗｸﾀｰ位置指定
         CharaPosition.X = 0
         CharaPosition.Y = 0
         CharaPosition.Height = rctSize
         CharaPosition.Width = rctSize
+        '前回の名前 20140204
+        Dim OldName As String = ""
+        Dim iName As Integer
         If ListBox1.Items.Count <> 0 Then
+            iName = InStr(ListBox1.Items(0), ".bmp")
+            OldName = ListBox1.Items(0).Substring(iName - 6, 3)
             For Each strList As String In ListBox1.Items
-                If row = 10 Then
-                    CharaPosition.X = 0
-                    CharaPosition.Y += rowW
-                    row = 0
+                If (Page * 5 > TOTALROW) Or ((Page + 1) * 5 < TOTALROW) Then
+                    '被験者が異なると改行
+                    iName = InStr(strList, ".bmp")
+                    'If row = 10 Then
+                    If (strList.Substring(iName - 6, 3) <> OldName) Then
+                        TOTALROW += 1
+                        If Page * 5 = TOTALROW Then
+                            e.Graphics.DrawImage(CharacterImg, CharaPosition)
+                            e.Graphics.DrawString(FindMonit(strList), myfnt, Brushes.Black, CharaPosition.X, CharaPosition.Y + rctSize)
+                            CharaPosition.X += rctSize
+                            CharaPosition.Y += 0
+                        End If
+                    End If
+                    CharacterImg = New Bitmap(strList) ' 文字画像
+                    ' ｷｬﾗｸﾀｰ画像の描画
+                    'e.Graphics.DrawImage(CharacterImg, CharaPosition)
+                    'e.Graphics.DrawString(FindMonit(strList), myfnt, Brushes.Black, CharaPosition.X, CharaPosition.Y + rctSize)
+                    'CharaPosition.X += rctSize
+                    'CharaPosition.Y += 0
+                    'row += 1
+                    OldName = strList.Substring(iName - 6, 3)
+
+                Else
+                    '被験者が異なると改行
+                    iName = InStr(strList, ".bmp")
+                    'If row = 10 Then
+                    If (strList.Substring(iName - 6, 3) <> OldName) Then
+                        CharaPosition.X = 0
+                        CharaPosition.Y += rowW
+                        row = 0
+                        TOTALROW += 1
+                        If (Page + 1) * 5 = TOTALROW Then
+                            Exit For
+                        End If
+
+                    End If
+
+
+                    CharacterImg = New Bitmap(strList) ' 文字画像
+                    ' ｷｬﾗｸﾀｰ画像の描画
+                    e.Graphics.DrawImage(CharacterImg, CharaPosition)
+                    e.Graphics.DrawString(FindMonit(strList), myfnt, Brushes.Black, CharaPosition.X, CharaPosition.Y + rctSize)
+                    CharaPosition.X += rctSize
+                    CharaPosition.Y += 0
+                    row += 1
+                    OldName = strList.Substring(iName - 6, 3)
+
                 End If
-                CharacterImg = New Bitmap(strList) ' 文字画像
-                ' ｷｬﾗｸﾀｰ画像の描画
-                e.Graphics.DrawImage(CharacterImg, CharaPosition)
-                e.Graphics.DrawString(FindMonit(strList), myfnt, Brushes.Black, CharaPosition.X, CharaPosition.Y + rctSize)
-                CharaPosition.X += rctSize
-                CharaPosition.Y += 0
-                row += 1
+
+
             Next
         End If
- 
+
 
     End Sub
 
@@ -480,6 +567,7 @@ Public Class Form1
         h = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height
         'ディスプレイの幅
         w = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Width
+        Label4.Text = (Page + 1) & "/" & (Page + 1)
 
 
     End Sub
@@ -503,4 +591,63 @@ Public Class Form1
         TextBox3.Text = ",Y=" & e.Y & "  )"
     End Sub
 
+    Private Sub pd_PrintPage(ByVal sender As Object, _
+            ByVal e As System.Drawing.Printing.PrintPageEventArgs)
+
+
+        '画像を読み込む
+        'Dim img As Image = PictureBox1.Image
+        Dim img As Image = Image.FromFile("F:\筆跡判定\tmp\1.png")
+        '画像を描画する
+        e.Graphics.DrawImage(img, 0, 0, img.Width, img.Height)
+        '次のページがないことを通知する
+        e.HasMorePages = False
+        '後始末をする
+        img.Dispose()
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        'PrintDocumentオブジェクトの作成
+        Dim pd As New System.Drawing.Printing.PrintDocument
+        'PrintPageイベントハンドラの追加
+        AddHandler pd.PrintPage, AddressOf pd_PrintPage
+
+        'PrintPreviewDialogオブジェクトの作成
+        Dim ppd As New PrintPreviewDialog
+        'プレビューするPrintDocumentを設定
+        ppd.Document = pd
+        '印刷プレビューダイアログを表示する
+        ppd.ShowDialog()
+
+    End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        If MAXPAGE > (Page + 1) Then
+            Page += 1
+        End If
+        Label4.Text = (Page + 1) & "/" & MAXPAGE
+        PictureBox1.Refresh()
+        'コントロールの外観を描画するBitmapの作成
+        Dim bmp As New Bitmap(Me.Width, Me.Height)
+        'キャプチャする
+        PictureBox1.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
+        'ファイルに保存する
+        bmp.Save("F:\筆跡判定\tmp\1.png")
+
+    End Sub
+
+    Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
+        If Page + 1 > 1 Then
+            Page -= 1
+        End If
+        Label4.Text = (Page + 1) & "/" & MAXPAGE
+        PictureBox1.Refresh()
+        'コントロールの外観を描画するBitmapの作成
+        Dim bmp As New Bitmap(Me.Width, Me.Height)
+        'キャプチャする
+        PictureBox1.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
+        'ファイルに保存する
+        bmp.Save("F:\筆跡判定\tmp\1.png")
+
+    End Sub
 End Class
