@@ -1,11 +1,9 @@
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\bin\Debug\科警研P01.exe
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\bin\Debug\科警研P01.pdb
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\bin\Debug\科警研P01.xml
-D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\科警研P01.Form1.resources
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\科警研P01.Resources.resources
-D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\GenerateResource.read.1.tlog
-D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\科警研P01.exe
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\科警研P01.xml
 D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\科警研P01.pdb
+D:\佐々木の資料\flaming-tyrion\科警研P01\科警研P01\obj\x86\Debug\科警研P01.vbproj.GenerateResource.Cache

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="筆跡TEST">
+</Property><Property Name="ソリューション ファイル" Value="D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST.suo">
+</Property><Property Name="Date" Value="2014年3月27日">
+</Property><Property Name="Time" Value="17:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="筆跡TEST.sln" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST.sln としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="筆跡TEST.suo" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST.suo としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\筆跡検索システムTEST.vbproj" Description="プロジェクト ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\筆跡検索システムTEST.vbproj としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\筆跡検索システムTEST.vbproj.user" Description="プロジェクト ユーザー ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\筆跡検索システムTEST.vbproj.user としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\Form1.Designer.vb" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\Form1.Designer.vb としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\Form1.vb" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\Form1.vb としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\AssemblyInfo.vb" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\AssemblyInfo.vb としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\Application.Designer.vb" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\Application.Designer.vb としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\Resources.Designer.vb" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\Resources.Designer.vb としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\Settings.Designer.vb" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\Settings.Designer.vb としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\Application.myapp" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\Application.myapp としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\Settings.settings" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\Settings.settings としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\Form1.resx" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\Form1.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\My Project\Resources.resx" Description="ファイルは正常に D:\佐々木の資料\flaming-tyrion\筆跡TEST\Backup\筆跡TEST\My Project\Resources.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\筆跡検索システムTEST.vbproj" Description="プロジェクトは正常に変換されました。">
+</Event><Event ErrorLevel="3" Project="筆跡検索システムTEST" Source="筆跡TEST\筆跡検索システムTEST.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="筆跡TEST.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="筆跡TEST.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="筆跡検索システムTEST" Source="筆跡TEST\筆跡検索システムTEST.vbproj" Description="スキャンが完了しました: プロジェクト ファイルにアップグレードは必要ありません。">
+</Event></UpgradeLog>

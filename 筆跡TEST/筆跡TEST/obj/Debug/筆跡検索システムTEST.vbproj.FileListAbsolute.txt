@@ -1,7 +1,6 @@
 D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\bin\Debug\筆跡TEST.exe
 D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\bin\Debug\筆跡TEST.pdb
 D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\bin\Debug\筆跡TEST.xml
-D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\obj\Debug\ResolveAssemblyReference.cache
 D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\obj\Debug\筆跡TEST.Form1.resources
 D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\obj\Debug\筆跡TEST.Resources.resources
 D:\佐々木の資料\flaming-tyrion\筆跡TEST\筆跡TEST\obj\Debug\筆跡検索システムTEST.vbproj.GenerateResource.Cache

@@ -10,3 +10,14 @@ D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Debug\GenerateR
 D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.exe
 D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.xml
 D:\佐々木の資料\flaming-tyrion\ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.pdb
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\bin\Debug\ＡＰＩ.exe.config
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.exe
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.xml
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.pdb
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\bin\Debug\ＡＰＩ.exe
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\bin\Debug\ＡＰＩ.pdb
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\bin\Debug\ＡＰＩ.xml
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\bin\Debug\TwitterVB.dll
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.vbprojResolveAssemblyReference.cache
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\obj\x86\Debug\ConsoleApplication1.Resources.resources
+D:\佐々木の資料\flaming-tyrion\7_2_ＡＰＩ\ＡＰＩ\obj\x86\Debug\ＡＰＩ.vbproj.GenerateResource.Cache

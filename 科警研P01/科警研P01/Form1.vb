@@ -25,10 +25,10 @@ Public Class Form1
     Dim bcsvDat(,) As String = Nothing
 
     Dim mes As String
-    Private Const csvPtFile As String = "F:\筆跡判定\座標ファイル\記載枠座標_本番用変換済み.csv"            'CSV座標ファイルパス
-    Private Const tmpFilePath As String = "F:\筆跡判定\記入文字ファイル\"            '記入文字ファイルフォルダパス
-    'Private Const bmpPtfile As String = "F:\筆跡判定\BMP座標ファイル\BMP座標_本番用変換済み.csv"            'BMP座標ファイルパス
-    Private Const InOutfile As String = "F:\筆跡判定\入出力ファイル\入出力ファイル.txt"            '入出力ファイルパス
+    Private Const csvPtFile As String = "D:\佐々木の資料\科警研\座標ファイル\記載枠座標_本番用変換済み.csv"            'CSV座標ファイルパス
+    Private Const tmpFilePath As String = "D:\佐々木の資料\科警研\記入文字ファイル\"            '記入文字ファイルフォルダパス
+    'Private Const bmpPtfile As String = "D:\佐々木の資料\科警研\BMP座標ファイル\BMP座標_本番用変換済み.csv"            'BMP座標ファイルパス
+    Private Const InOutfile As String = "D:\佐々木の資料\科警研\入出力ファイル\入出力ファイル.txt"            '入出力ファイルパス
     Private Const PROGRAM_ID As String = "画像切出しツール"            'CSV座標ファイルパス
     Dim WriterLog As System.IO.StreamWriter
     Dim WriterInOut As System.IO.StreamWriter
@@ -115,7 +115,7 @@ Public Class Form1
         ProgressBar1.Minimum = 0
         ProgressBar1.Maximum = 78
         ProgressBar1.Value = 0
-        WriterLog = New System.IO.StreamWriter("F:\筆跡判定\log\log.log", True, System.Text.Encoding.UTF8)
+        WriterLog = New System.IO.StreamWriter("D:\佐々木の資料\科警研\log\log.log", True, System.Text.Encoding.UTF8)
 
         mes = Date.Now.ToString & "処理開始します。"
         WriterLog.WriteLine(mes)
@@ -237,7 +237,7 @@ Public Class Form1
         fbd.RootFolder = Environment.SpecialFolder.Desktop
         '最初に選択するフォルダを指定する
         'RootFolder以下にあるフォルダである必要がある
-        fbd.SelectedPath = "F:\筆跡判定\切り出しファイル結果ＣＳＶ"
+        fbd.SelectedPath = "D:\佐々木の資料\科警研\切り出しファイル結果ＣＳＶ"
         'ユーザーが新しいフォルダを作成できるようにする
         fbd.ShowNewFolderButton = True
 
@@ -258,7 +258,7 @@ Public Class Form1
         fbd2.RootFolder = Environment.SpecialFolder.Desktop
         '最初に選択するフォルダを指定する
         'RootFolder以下にあるフォルダである必要がある
-        fbd2.SelectedPath = "F:\筆跡判定\OUTPUT"
+        fbd2.SelectedPath = "D:\佐々木の資料\科警研\OUTPUT"
         'ユーザーが新しいフォルダを作成できるようにする
         fbd2.ShowNewFolderButton = True
 
@@ -276,7 +276,7 @@ Public Class Form1
         fbd3.RootFolder = Environment.SpecialFolder.Desktop
         '最初に選択するフォルダを指定する
         'RootFolder以下にあるフォルダである必要がある
-        fbd3.SelectedPath = "F:\筆跡判定\98-2-6"
+        fbd3.SelectedPath = "D:\佐々木の資料\科警研\98-2-6"
         'ユーザーが新しいフォルダを作成できるようにする
         fbd3.ShowNewFolderButton = True
 
@@ -578,7 +578,7 @@ Public Class Form1
         Button5.Enabled = False
         Button6.Enabled = False
         Button7.Enabled = False
-        WriterLog = New System.IO.StreamWriter("F:\筆跡判定\log\log.log", True, System.Text.Encoding.UTF8)
+        WriterLog = New System.IO.StreamWriter("D:\佐々木の資料\科警研\log\log.log", True, System.Text.Encoding.UTF8)
 
         Dim Reader As New IO.StreamReader(InOutfile, System.Text.Encoding.GetEncoding("Shift-JIS"))
         Dim Array() As String                'CSVの各項目を表す配列

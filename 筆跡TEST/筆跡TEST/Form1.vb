@@ -106,7 +106,7 @@ Public Class Form1
             strKeyb = KANA & "_" & "*.bmp"
             'チェックボックスの確認
             files = System.IO.Directory.GetFiles( _
-                  "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                  "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
             'ListBox1に結果を表示する
             ListBox1.Items.AddRange(files)
 
@@ -117,7 +117,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_1.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -125,7 +125,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_2.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -133,7 +133,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_3.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -141,7 +141,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_4.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -149,7 +149,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_5.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -157,7 +157,7 @@ Public Class Form1
                 strKeyb = KANA & "_" & monitID & "_*.bmp"
                 'チェックボックスの確認
                 files = System.IO.Directory.GetFiles( _
-                      "F:\筆跡判定", strKeyb, System.IO.SearchOption.AllDirectories)
+                      "D:\佐々木の資料\科警研", strKeyb, System.IO.SearchOption.AllDirectories)
                 'ListBox1に結果を表示する
                 ListBox1.Items.AddRange(files)
             End If
@@ -210,7 +210,7 @@ Public Class Form1
         'キャプチャする
         PictureBox1.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
         'ファイルに保存する
-        bmp.Save("F:\筆跡判定\tmp\1.png")
+        bmp.Save("D:\佐々木の資料\科警研\tmp\1.png")
         '後始末
         bmp.Dispose()
 
@@ -246,7 +246,7 @@ Public Class Form1
         strKeyc = KANA & "_" & monitID & "_" & pCnt & ".csv"
 
         files = System.IO.Directory.GetFiles( _
-                    "F:\筆跡判定", strKeyc, System.IO.SearchOption.AllDirectories)
+                    "D:\佐々木の資料\科警研", strKeyc, System.IO.SearchOption.AllDirectories)
         If files.Length > 1 Then
             csvfile = files(0)
             MsgBox("CSVファイルが複数あります。" & files(1))
@@ -597,7 +597,7 @@ Public Class Form1
 
         '画像を読み込む
         'Dim img As Image = PictureBox1.Image
-        Dim img As Image = Image.FromFile("F:\筆跡判定\tmp\1.png")
+        Dim img As Image = Image.FromFile("D:\佐々木の資料\科警研\tmp\1.png")
         '画像を描画する
         e.Graphics.DrawImage(img, 0, 0, img.Width, img.Height)
         '次のページがないことを通知する
@@ -632,7 +632,7 @@ Public Class Form1
         'キャプチャする
         PictureBox1.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
         'ファイルに保存する
-        bmp.Save("F:\筆跡判定\tmp\1.png")
+        bmp.Save("D:\佐々木の資料\科警研\tmp\1.png")
 
     End Sub
 
@@ -647,7 +647,7 @@ Public Class Form1
         'キャプチャする
         PictureBox1.DrawToBitmap(bmp, New Rectangle(0, 0, Me.Width, Me.Height))
         'ファイルに保存する
-        bmp.Save("F:\筆跡判定\tmp\1.png")
+        bmp.Save("D:\佐々木の資料\科警研\tmp\1.png")
 
     End Sub
 End Class

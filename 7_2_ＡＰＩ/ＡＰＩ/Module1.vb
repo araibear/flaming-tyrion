@@ -7,8 +7,12 @@ Module Module1
     Dim pass As String = ""
 
     Sub Main()
+        Dim webreq As System.Net.HttpWebRequest
         Dim tw As New TwitterAPI
         'Dim Url As String = tw.GetAuthorizationLink("取得したConsumerkey", "取得したConsumersecret")
+        Dim bypassUrls() As String = {"https://api.twitter.com/1.1/statuses/home_timeline.json"}
+        webreq.Proxy = _
+            New System.Net.WebProxy("http://192.168.99.8:8080", True, bypassUrls)
 
         'アクセスキーの宣言
         Dim ConsumerKey As String = "zr0VDF3eODE8ACmc812mg"
@@ -16,42 +20,25 @@ Module Module1
         Dim TokenKey As String = "1003644312-DoTcXDItPOUFj8JEWCcJHJGvnISl6wAKcOIPDWx"
         Dim TokenSecret As String = "JM2vfWiYFRSaLRegesRgW0WSv2IzmRH0AJbCzfOqk"
 
-
-        Dim req As WebRequest = CreateWebRequest("http://twitter.com/")
-        req.Method = "GET"
-        Try
-            Dim wr As HttpWebResponse
-            wr = req.GetResponse()
-            Dim ht As HttpStatusCode = wr.StatusCode
-            wr.Close()
-            ht = HttpStatusCode.OK
-        Catch ex As Exception
-            Console.WriteLine(ex)
-        End Try
-        
-
-
-        Dim a As TwitterVB2.TwitterOAuth.Method
-        a.ToString()
+        tw.ProxyUsername()
         tw.AuthenticateWith(ConsumerKey, ConsumerSecret, TokenKey, TokenSecret)
+
         'タイムライン取得
-        Try
-            Dim tp As New TwitterParameters
-            tp.Add(TwitterParameterNames.Count, 50)
-            For Each status As TwitterStatus In tw.HomeTimeline(tp)
-                Console.WriteLine(status.User.ScreenName & " : " & status.Text)
-            Next
-        Catch ex As Exception
-            Console.WriteLine(ex)
-        End Try
-        
+        For Each Tweet As TwitterStatus In tw.HomeTimeline
+            Console.WriteLine(Tweet.User.ScreenName & " : " & Tweet.Text)
+        Next
 
         'つぶやき投稿
-        Try
-            'Dim TweetStatus As TwitterStatus = tw.Update("Hello")
-        Catch ex As Exception
-            Console.WriteLine(ex)
-        End Try
+        Dim TweetStatus As TwitterStatus = tw.Update("ありがとう")
+
+        'タイムライン取得（ScreenName＆個数）
+        Dim tp As New TwitterParameters
+        tp.Add(TwitterParameterNames.Count, 10) '取得する個数
+        tp.Add(TwitterParameterNames.ScreenName, "ScreenName") '取得したいScreenName
+
+        For Each Tweet As TwitterStatus In tw.UserTimeline(tp)
+            Console.WriteLine(Tweet.User.ScreenName & " : " & Tweet.Text)
+        Next
 
 
 
